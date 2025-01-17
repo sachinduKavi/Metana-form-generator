@@ -12,6 +12,7 @@ function MultiDisplay() {
     const globalValue = useSelector((state: RootState) => state.global)
     const dispatch: AppDispatch = useDispatch()
 
+
     const updateGlobal = (name: any, value: any) => {
         dispatch(setValue({[name]: value}))
     }
